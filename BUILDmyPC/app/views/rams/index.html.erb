@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Ram type</th>
+      <th>Manufacturer</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rams.each do |ram| %>
+      <tr>
+        <td><%= ram.name %></td>
+        <td><%= ram.ram_type %></td>
+        <td><%= ram.manufacturer %></td>
+        <td><%= ram.description %></td>
+        <td><%= ram.picture %></td>
+        <td><%= ram.price %></td>
+        <td><%= link_to 'Show', ram %></td>
+        <!--<td><%= link_to 'Edit', edit_ram_path(ram) %></td>
+        <td><%= link_to 'Destroy', ram, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>-->
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<%= link_to 'New Ram', new_ram_path %>-->

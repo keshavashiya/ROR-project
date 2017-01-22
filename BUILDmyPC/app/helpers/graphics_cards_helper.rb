@@ -1,0 +1,2 @@
+module GraphicsCardsHelper
+end

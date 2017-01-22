@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  motherboard_type: MyString
+  manufacturer: MyString
+  description: MyText
+  picture: MyString
+  price: 1
+
+two:
+  name: MyString
+  motherboard_type: MyString
+  manufacturer: MyString
+  description: MyText
+  picture: MyString
+  price: 1

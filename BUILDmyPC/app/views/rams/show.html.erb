@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ram.name %>
+</p>
+
+<p>
+  <strong>Ram type:</strong>
+  <%= @ram.ram_type %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @ram.manufacturer %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @ram.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@ram.picture_url, width: 600) if @ram.picture.present? %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @ram.price %>
+</p>
+
+<!--<%= link_to 'Edit', edit_ram_path(@ram) %> |-->
+<%= link_to 'Back', rams_path %>

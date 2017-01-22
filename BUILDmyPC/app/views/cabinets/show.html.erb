@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cabinet.name %>
+</p>
+
+<p>
+  <strong>Cabinet type:</strong>
+  <%= @cabinet.cabinet_type %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @cabinet.manufacturer %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cabinet.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@cabinet.picture_url, width: 600) if @cabinet.picture.present? %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @cabinet.price %>
+</p>
+
+<!--<%= link_to 'Edit', edit_cabinet_path(@cabinet) %> |-->
+<%= link_to 'Back', cabinets_path %>

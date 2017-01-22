@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @motherboard.name %>
+</p>
+
+<p>
+  <strong>Motherboard type:</strong>
+  <%= @motherboard.motherboard_type %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @motherboard.manufacturer %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @motherboard.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@motherboard.picture_url, width: 600) if @motherboard.picture.present? %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @motherboard.price %>
+</p>
+
+<!--<%= link_to 'Edit', edit_motherboard_path(@motherboard) %> |-->
+<%= link_to 'Back', motherboards_path %>

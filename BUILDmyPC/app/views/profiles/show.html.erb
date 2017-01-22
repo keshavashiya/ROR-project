@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @profile.email %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @profile.mobile %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @profile.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@profile.picture_url, width: 600) if @profile.picture.present? %>
+</p>
+
+<!--<%= link_to 'Edit', edit_profile_path(@profile) %> |-->
+<%= link_to 'Back', profiles_path %>

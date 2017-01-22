@@ -1,0 +1,1 @@
+json.array! @graphics_cards, partial: 'graphics_cards/graphics_card', as: :graphics_card

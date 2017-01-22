@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Motherboards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Motherboard type</th>
+      <th>Manufacturer</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @motherboards.each do |motherboard| %>
+      <tr>
+        <td><%= motherboard.name %></td>
+        <td><%= motherboard.motherboard_type %></td>
+        <td><%= motherboard.manufacturer %></td>
+        <td><%= motherboard.description %></td>
+        <td><%= motherboard.picture %></td>
+        <td><%= motherboard.price %></td>
+        <td><%= link_to 'Show', motherboard %></td>
+        <!--<td><%= link_to 'Edit', edit_motherboard_path(motherboard) %></td>
+        <td><%= link_to 'Destroy', motherboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<%= link_to 'New Motherboard', new_motherboard_path %>-->

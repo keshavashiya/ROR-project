@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @graphics_card.name %>
+</p>
+
+<p>
+  <strong>Graphics card type:</strong>
+  <%= @graphics_card.graphics_card_type %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @graphics_card.manufacturer %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @graphics_card.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@graphics_card.picture_url, width: 600) if @graphics_card.picture.present? %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @graphics_card.price %>
+</p>
+
+<!--<%= link_to 'Edit', edit_graphics_card_path(@graphics_card) %> |-->
+<%= link_to 'Back', graphics_cards_path %>
